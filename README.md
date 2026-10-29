@@ -3,24 +3,35 @@ Otvoreni podaci o Victoria's secret modelima, modnim revijama i prisutnim izvođ
 
 ---
 naslov: "Victoria's Secret Angels and Shows"
+
 autor: "Dora Arnold"
+
 verzija: "1.0"
+
 licencija: "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+
 jezik: "engleski (eng)"
+
 kategorija:
   - moda
   - zabava
+    
 kljucne_rijeci:
   - moda
   - modeli
   - Victoria's Secret
   - modna revija
+    
 format_datoteka:
   - JSON
   - CSV
+  
 datum_prikupljanja: "2026-10-23"
+
 opis: "Skup podataka o Victoria's Secret modelima, modnim revijama i izvođačima."
+
 ---
+
 
 
 ## 1. Opis otvorenog skupa podataka
