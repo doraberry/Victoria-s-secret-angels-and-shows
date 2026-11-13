@@ -1,0 +1,18 @@
+{
+  "name": "victoria-s-secret-angels-and-shows-1.0",
+  "version": "1.0.0",
+  "description": "Otvoreni podaci o Victoria's secret modelima, modnim revijama i prisutnim izvođačima.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  }
+}

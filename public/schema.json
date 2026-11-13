@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost:3000/schema.json",
+  "title": "Victoria's Secret Angels and Shows",
+  "description": "Skup podataka o Victoria's Secret modelima, modnim revijama i izvođačima.",
+  "type": "array",
+  "items": {
+    "title": "Model",
+    "description": "Podaci o jednom modelu i njegovim revijama.",
+    "type": "object",
+    "required": [
+      "angel_id",
+      "name",
+      "surname",
+      "date_of_birth",
+      "nationality",
+      "height_cm",
+      "active_from_year",
+      "active_to_year",
+      "status",
+      "hair_color",
+      "eye_color",
+      "agency",
+      "shows"
+    ],
+    "properties": {
+      "angel_id": {
+        "title": "ID modela",
+        "description": "Jedinstveni identifikator modela.",
+        "type": "integer"
+      },
+      "name": {
+        "title": "Ime",
+        "description": "Ime modela.",
+        "type": "string"
+      },
+      "surname": {
+        "title": "Prezime",
+        "description": "Prezime modela.",
+        "type": "string"
+      },
+      "date_of_birth": {
+        "title": "Datum rođenja",
+        "description": "Datum rođenja u formatu YYYY-MM-DD.",
+        "type": "string",
+        "format": "date"
+      },
+      "nationality": {
+        "title": "Nacionalnost",
+        "description": "Nacionalnost modela.",
+        "type": "string"
+      },
+      "height_cm": {
+        "title": "Visina",
+        "description": "Visina u centimetrima.",
+        "type": "integer"
+      },
+      "active_from_year": {
+        "title": "Početak aktivnosti",
+        "description": "Godina početka aktivnosti.",
+        "type": "integer"
+      },
+      "active_to_year": {
+        "title": "Kraj aktivnosti",
+        "description": "Godina završetka aktivnosti.",
+        "type": "integer"
+      },
+      "status": {
+        "title": "Status",
+        "description": "Status suradnje modela.",
+        "type": "string"
+      },
+      "hair_color": {
+        "title": "Boja kose",
+        "description": "Boja kose modela.",
+        "type": "string"
+      },
+      "eye_color": {
+        "title": "Boja očiju",
+        "description": "Boja očiju modela.",
+        "type": "string"
+      },
+      "agency": {
+        "title": "Agencija",
+        "description": "Modna agencija koja zastupa model.",
+        "type": "string"
+      },
+      "shows": {
+        "title": "Revije",
+        "description": "Popis revija na kojima je model sudjelovao.",
+        "type": "array",
+        "items": {
+          "title": "Revija",
+          "description": "Podaci o jednoj modnoj reviji.",
+          "type": "object",
+          "required": ["year", "city", "venue", "performers"],
+          "properties": {
+            "year": {
+              "title": "Godina",
+              "description": "Godina održavanja revije.",
+              "type": "integer"
+            },
+            "city": {
+              "title": "Grad",
+              "description": "Grad održavanja revije.",
+              "type": "string"
+            },
+            "venue": {
+              "title": "Lokacija",
+              "description": "Mjesto održavanja revije.",
+              "type": "string"
+            },
+            "performers": {
+              "title": "Izvođači",
+              "description": "Popis izvođača na reviji.",
+              "type": "array",
+              "items": {
+                "title": "Izvođač",
+                "description": "Podaci o jednom izvođaču.",
+                "type": "object",
+                "required": ["name", "fullname"],
+                "properties": {
+                  "name": {
+                    "title": "Ime izvođača",
+                    "description": "Umjetničko ili skraćeno ime izvođača.",
+                    "type": "string"
+                  },
+                  "fullname": {
+                    "title": "Puno ime",
+                    "description": "Puno ime izvođača.",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

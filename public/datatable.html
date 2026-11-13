@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablica modela</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="datatable.js" defer></script>
+  </head>
+  <body>
+    <a href="index.html">Početna stranica</a>
+    <h1>Victoria's Secret modeli</h1>
+
+    <form id="forma">
+      <label for="search">Pretraga:</label>
+      <input type="text" id="search" />
+
+      <label for="atribut">Atribut:</label>
+      <select id="atribut">
+        <option value="all">Svi atributi</option>
+      </select>
+
+      <button type="submit">Pretraži</button>
+      <button type="reset">Poništi</button>
+    </form>
+
+    <p id="poruka">Učitavanje...</p>
+    <p>
+      <a id="csv" download="VictoriaSecret-filtrirano.csv">Preuzmi CSV</a>
+      <a id="json" download="VictoriaSecret-filtrirano.json">Preuzmi JSON</a>
+    </p>
+    <table id="table"></table>
+  </body>
+</html>
